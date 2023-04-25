@@ -5,9 +5,9 @@
 </head>
 <body style="text-align: center">
 <h1>Welcome to DevOps tools</h1>
-<img src="tower.jpeg" alt="Mega start chiru" width="500" height="600">
+<img src="boy.jpg" alt="Boy pic" width="500" height="600">
 
-<h2>You have successfully launched your Instance!</h2>
+<h2>Welcome to my company!</h2>
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
