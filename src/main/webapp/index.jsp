@@ -8,6 +8,7 @@
 <img src="boy.jpg" alt="Boy pic" width="500" height="600">
 
 <h2>Welcome to my company!</h2>
+<h2>Welcome to my company!</h2>
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
@@ -21,6 +22,7 @@
 <h2 style="margin-top: 80px">Next steps</h2>
 
 <p style="margin-bottom: 20px;">
+    Display the Instance console:<br/>
     Display the Instance console:<br/>
     <strong>boxfuse logs <%= System.getenv("BOXFUSE_INSTANCE_ID") %>
     </strong>
@@ -56,6 +58,8 @@
 
 <p>If you need any help the <strong><a href="http://boxfuse.com/docs">documentation</a></strong> is there for you,<br/>or simply shoot us an email at <a href="mailto:support@boxfuse.com">support@boxfuse.com</a></p>
 
+<p>Say goodbye to snowflake servers.</p>
+<p><strong>Enjoy Boxfuse!</strong></p>
 <p>Say goodbye to snowflake servers.</p>
 <p><strong>Enjoy Boxfuse!</strong></p>
 <% } %>
