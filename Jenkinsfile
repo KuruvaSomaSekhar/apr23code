@@ -1,6 +1,9 @@
 //Declarative pipeline
 pipeline {
     agent any 
+     parameters {
+        string(name: 'BRANCH_NAME', defaultValue: 'master', description: 'provide branch name')
+    }   
     stages {
         stage("Build"){
             steps {
@@ -19,6 +22,7 @@ pipeline {
                     ls -l target/
                     echo $JOB_NAME
                     echo ${BRANCH_NAME}
+                    echo ${params.BRANCH_NAME}
                     echo $BUILD_NUMBER
                 '''
             }
