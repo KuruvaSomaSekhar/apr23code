@@ -18,7 +18,7 @@ pipeline {
                     echo "We are in stage B"
                     ls -l target/
                     echo $JOB_NAME
-                    echo env.BRANCH_NAME
+                    echo ${BRANCH_NAME}
                     echo $BUILD_NUMBER
                 '''
             }
