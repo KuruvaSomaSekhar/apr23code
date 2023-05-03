@@ -6,6 +6,8 @@ pipeline {
             steps {
                 sh'''
                     echo "We are in stage A"
+                    ls -l
+                    mvn --version
                 '''
             }
         }
