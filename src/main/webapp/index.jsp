@@ -1,6 +1,7 @@
 <!DOCTYPE>
 <html>
 <head>
+<<<<<<< HEAD
     <title>Boxfuse Sample App: success!</title>
 </head>
 <body style="text-align: center">
@@ -8,6 +9,15 @@
 <img src="logo.jsp" alt="Mega start chiru" width="500" height="600">
 
 <h2>You have successfully launched your Instance!</h2>
+=======
+    <title>DevOps App: success!</title>
+</head>
+<body style="text-align: center">
+<h1>Welcome to DevOps tools - MASTER</h1>
+<img src="boy.jpg" alt="Boy pic" width="500" height="600">
+
+<h2>Welcome to my company!</h2>
+>>>>>>> b4d363cf9d321e3a01e57f54682b399dac61e375
 
 <p>This Instance is running on <strong><%= System.getenv("BOXFUSE_PLATFORM_NAME") %>
 </strong> and has the id <strong><%= System.getenv("BOXFUSE_INSTANCE_ID") %>
