@@ -22,8 +22,8 @@ pipeline {
                     ls -l target/
                     echo $JOB_NAME
                     echo ${BRANCH_NAME}
-                    echo ${params.BRANCH_NAME}
                     echo $BUILD_NUMBER
+                    aws s3 cp target/devops-1.0.0.war s3://apr23artifacts/$JOB_NAME/${BRANCH_NAME}/$BUILD_NUMBER/
                 '''
             }
         }
