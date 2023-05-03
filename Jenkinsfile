@@ -3,21 +3,21 @@ pipeline {
     agent any 
     stages {
         stage("A"){
-            script {
+            steps {
                 sh'''
                     echo "We are in stage A"
                 '''
             }
         }
         stage("B"){
-            script {
+            steps {
                 sh'''
                     echo "We are in stage B"
                 '''
             }
         }
         stage("C"){
-            script {
+            steps {
                 sh'''
                     echo "We are in stage C"
                 '''
