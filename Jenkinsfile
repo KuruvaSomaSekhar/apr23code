@@ -2,19 +2,21 @@
 pipeline {
     agent any 
     stages {
-        stage("A"){
+        stage("Build"){
             steps {
                 sh'''
                     echo "We are in stage A"
                     ls -l
                     mvn --version
+                    mvn clean package
                 '''
             }
         }
-        stage("B"){
+        stage("Upload artifacts"){
             steps {
                 sh'''
                     echo "We are in stage B"
+                    ls -l target/
                 '''
             }
         }
